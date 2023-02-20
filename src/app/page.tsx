@@ -1,9 +1,4 @@
 import { HomeSlide } from '@/components/Home/HomeSlide'
-import { Inter } from '@next/font/google'
-import { Suspense } from 'react'
-import Loading from './loading'
-
-const inter = Inter({ subsets: ['latin'] })
 
 async function getData() {
   const res = await fetch(
@@ -20,13 +15,9 @@ export default async function Home() {
   const data = await getData()
 
   return (
-    <main className={`${inter.className} bg-black text-white min-h-screen`}>
+    <main className="bg-black text-white min-h-screen">
       <HomeSlide />
-      <Suspense fallback={<Loading />}>
-        <div
-          dangerouslySetInnerHTML={{ __html: data[0].content.rendered }}
-        ></div>
-      </Suspense>
+      <div dangerouslySetInnerHTML={{ __html: data[0].content.rendered }}></div>
     </main>
   )
 }
