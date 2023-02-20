@@ -4,14 +4,29 @@
 
 @layer base {
     html {
-        font-family: Montserrat, sans-serif;
+        @apply font-content font-normal text-base
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-heading font-bold
+    }
+
+    body {
+        @apply bg-gray-100 text-black antialiased
+    }
+}
+
+@layer components {
+    .services-list li{
+        @apply border-b-2 border-gray-300 w-fit py-2
+    }
+    .services-list li:hover {
+        @apply text-gray-700 cursor-pointer transition-all
     }
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-    @apply font-heading font-bold
-}
+
 
 
 

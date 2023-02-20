@@ -15,7 +15,7 @@ const oswald = Oswald({
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
-      lang="en"
+      lang="pt-BR"
       className={`${montserrat.variable} ${oswald.variable} ${montserrat.className}`}
     >
       {/*
