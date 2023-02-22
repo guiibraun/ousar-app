@@ -1,6 +1,6 @@
 'use client'
+import { Slider } from '@/components/SwiperSlider'
 import { SwiperProps, SwiperSlide } from 'swiper/react'
-import { Slider } from '../../SwiperSlider'
 
 const settings: SwiperProps = {
   slidesPerView: 1,
