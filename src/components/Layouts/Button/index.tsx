@@ -16,7 +16,7 @@ export function Button({
   return (
     <Link
       href={endpoint}
-      className={`unset bg-${background} text-${color} px-8 lg:h-[75px] h-[60px] text-xl rounded-full flex justify-center items-center`}
+      className={`unset bg-${background} text-${color} px-8 lg:h-[60px] h-[60px] text-xl rounded-full flex justify-center items-center`}
     >
       {description}
     </Link>
