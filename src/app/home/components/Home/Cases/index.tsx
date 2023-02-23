@@ -42,6 +42,16 @@ export function Cases({ cases }: CaseProps) {
                   <h3 className="font-content font-black text-3xl">
                     {item.title}
                   </h3>
+                  <span>
+                    {item.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="[&:not(:last-child)]:after:content-[',']"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </span>
                 </article>
               </div>
             </SwiperSlide>

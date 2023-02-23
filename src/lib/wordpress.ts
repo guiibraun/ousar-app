@@ -1,12 +1,8 @@
 import { Case, Tag } from '@/@types/wordpress'
 
 export async function fetchCases() {
-  const resCases = await fetch(`${process.env.BASE_URL}/cases`, {
-    next: { revalidate: 60 * 60 * 24 * 3 },
-  })
-  const resTags = await fetch(`${process.env.BASE_URL}/case_tags`, {
-    next: { revalidate: 60 * 60 * 24 * 3 },
-  })
+  const resCases = await fetch(`${process.env.BASE_URL}cases`)
+  const resTags = await fetch(`${process.env.BASE_URL}case_tags`)
 
   const cases: Case[] = await resCases.json()
   const tags: Tag[] = await resTags.json()
