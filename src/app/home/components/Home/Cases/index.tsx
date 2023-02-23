@@ -54,7 +54,7 @@ export function Cases({ cases }: CaseProps) {
                       {item.tags.join(', ')}
                     </span>
                   </div>
-                  <div className="mb-[-4rem]">
+                  <div className="absolute bottom-[-2rem]">
                     <Button
                       background="gray-700"
                       color="white"
