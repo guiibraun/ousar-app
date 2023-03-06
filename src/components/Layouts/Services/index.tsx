@@ -13,7 +13,7 @@ export function Services() {
         <li>BRANDING</li>
         <li>MÍDIA E PERFORMANCE DIGITAL</li>
         <li>DESENVOLVIMENTO WEB/E-COMMERCE</li>
-        <li> CONSULTORIA COMERCIAL OUSAR ACADEMY</li
+        <li> CONSULTORIA COMERCIAL OUSAR ACADEMY</li>
       </ul>
     </section>
   )
