@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { Montserrat, Oswald } from '@next/font/google'
+import { Montserrat, Oswald } from 'next/font/google'
 import './globals.css'
 
 const montserrat = Montserrat({
